@@ -150,7 +150,7 @@
       font-size: 0.875rem;
       line-height: 1.125rem;
       letter-spacing: 0.1167rem;
-      padding: 12px;
+      padding: 0.75rem 0.75rem 0.9375rem 0.75rem;
       color: colors.$white;
       background-color: colors.$orange;
       border: none;
@@ -166,10 +166,11 @@
         cursor: not-allowed;
       }
 
-      @media only screen and (min-width: 48rem) {
+      @media only screen and (min-width: 768rem) {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
         letter-spacing: 0.125rem;
+        padding: 0.6875rem 0.75rem 0.9375rem 0.75rem;
       }
     }
 
