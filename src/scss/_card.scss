@@ -2,3 +2,187 @@
 /* stylelint-disable csstree/validator */
 @use './_colors.scss';
 
+.rate-card {
+  width: 100%;
+  max-width: 412px;
+  margin-inline: auto;
+  background: colors.$card-bg;
+  border-radius: 1.875rem;
+  padding: 1.5rem;
+
+  @media only screen and (min-width: 768px) {
+    padding: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &-icon {
+      border-radius: 50%;
+      padding: 0.8331rem;
+      background-color: colors.$dark-blue;
+      margin-block-end: 1rem;
+
+      @media only screen and (min-width: 768px) {
+        padding: 1rem;
+        margin-block-end: 30px;
+      }
+
+      &-img {
+        display: block;
+        width: 0.8725rem;
+        height: auto;
+
+        @media only screen and (min-width: 768px) {
+          width: 1.0469rem;
+        }
+      }
+
+      &.submit {
+        align-self: center;
+        border-radius: none;
+        padding: 0;
+        background-color: transparent;
+        margin-block-start: 0.625rem;
+        margin-block-end: 1.5rem;
+
+        @media only screen and (min-width: 48rem) {
+          margin-block-start: 0.8125rem;
+          margin-block-end: 32px;
+        }
+
+        & > * {
+          width: 10.125rem;
+          height: auto;
+        }
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      color: colors.$white;
+      margin-block-end: 0.625rem;
+
+      @media only screen and (min-width: 48rem) {
+        font-size: 1.75rem;
+        line-height: 2.1875rem;
+        margin-block-end: 0.4375rem;
+      }
+
+      &.submit {
+        align-self: center;
+      }
+    }
+
+    &-msg {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      margin-block-end: 24px;
+
+      @media only screen and (min-width: 48rem) {
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      &.submit {
+        align-self: center;
+        text-align: center;
+      }
+    }
+
+    &-rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-block-end: 1.5rem;
+
+      @media only screen and (min-width: 768px) {
+        margin-block-end: 2rem;
+      }
+
+      &-btn {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-align: center;
+        letter-spacing: 0.0109rem;
+        padding: 0.5625rem 1.0625rem;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        background-color: colors.$dark-blue;
+
+        &:hover {
+          background-color: colors.$orange;
+          color: colors.$white;
+        }
+
+        &.active {
+          background-color: colors.$medium-grey;
+          color: colors.$white;
+        }
+
+        @media only screen and (min-width: 768px) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: center;
+          letter-spacing: 0.0125rem;
+          padding: 0.8125rem 1.3125rem;
+        }
+      }
+    }
+
+    &-submit {
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      letter-spacing: 0.1167rem;
+      padding: 12px;
+      color: colors.$white;
+      background-color: colors.$orange;
+      border: none;
+      border-radius: 1.4063rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: colors.$white;
+        color: colors.$orange;
+      }
+
+      @media only screen and (min-width: 48rem) {
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        letter-spacing: 0.125rem;
+      }
+    }
+
+    &-submit-text {
+      align-self: center;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      color: colors.$orange;
+      background-color: colors.$dark-blue;
+      padding: 0.3125rem 0.75rem;
+      border-radius: 1.4063rem;
+      margin-block-end: 1.5rem;
+
+      @media only screen and (min-width: 48rem) {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+        padding: 0.25rem 1.25rem;
+        margin-block-end: 2.25rem;
+      }
+    }
+  }
+}
