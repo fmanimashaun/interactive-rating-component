@@ -22,7 +22,9 @@
 
     &-icon {
       border-radius: 50%;
-      padding: 0.8331rem;
+      width: 3rem;
+      height: 3rem;
+      padding: 1rem;
       background-color: colors.$dark-blue;
       margin-block-end: 1rem;
 
@@ -33,7 +35,7 @@
 
       &-img {
         display: block;
-        width: 0.8725rem;
+        width: 100%;
         height: auto;
 
         @media only screen and (min-width: 768px) {
@@ -66,12 +68,12 @@
       font-size: 1.5rem;
       line-height: 1.875rem;
       color: colors.$white;
-      margin-block-end: 0.625rem;
+      margin-block-end: 1.0625rem;
 
       @media only screen and (min-width: 48rem) {
         font-size: 1.75rem;
         line-height: 2.1875rem;
-        margin-block-end: 0.4375rem;
+        margin-block-end: 0.9375rem;
       }
 
       &.submit {
