@@ -54,7 +54,7 @@
           margin-block-end: 32px;
         }
 
-        &>* {
+        & > * {
           width: 10.125rem;
           height: auto;
         }
@@ -108,7 +108,7 @@
         margin-block-end: 2rem;
       }
 
-      &>* {
+      &-btn {
         font-weight: 700;
         font-size: 0.875rem;
         line-height: 1.5rem;
